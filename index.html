@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spareo Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f4f7;
+    --border: rgba(11,14,22,0.1);
+    --text-primary: #0b0e16;
+    --text-secondary: #4b5468;
+    --text-muted: #7a8299;
+    --accent: #4f46e5;
+    --accent-teal: #0d9488;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0e16;
+      --surface: #141a26;
+      --border: rgba(255,255,255,0.08);
+      --text-primary: #f2f4f9;
+      --text-secondary: #93a0b8;
+      --text-muted: #5b647a;
+      --accent: #818cf8;
+      --accent-teal: #34d399;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header.doc-head {
+    margin-bottom: 48px;
+  }
+  .wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 2px;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+  }
+  .wordmark .o { color: var(--accent); }
+  h1 {
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin: 20px 0 12px;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .intro {
+    color: var(--text-secondary);
+    font-size: 17px;
+    line-height: 1.65;
+    margin-top: 24px;
+    max-width: 62ch;
+  }
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 40px 0 56px;
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: 24px;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 8px; }
+  nav.toc a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14.5px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+
+  section { margin-bottom: 44px; scroll-margin-top: 24px; }
+  section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  section h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    font-weight: 700;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  section p, section li {
+    color: var(--text-secondary);
+    font-size: 15.5px;
+    line-height: 1.7;
+    max-width: 66ch;
+  }
+  section ul { margin: 12px 0; padding-left: 20px; }
+  section li { margin-bottom: 8px; }
+  section li::marker { color: var(--text-muted); }
+  section p + p { margin-top: 12px; }
+  strong { color: var(--text-primary); font-weight: 600; }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-teal); }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+  }
+  .table-wrap { overflow-x: auto; }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+    vertical-align: top;
+  }
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  tr:last-child td { border-bottom: none; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="doc-head">
+    <span class="wordmark">spare<span class="o">O</span></span>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated September 8, 2026 &middot; Applies to the Spareo app and API</p>
+    <p class="intro">
+      Spareo connects people who have spare time and skills with people who need a hand
+      with a task. This page explains, plainly, what we collect to make that work, why,
+      and what choices you have.
+    </p>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#info-we-collect">1. Information we collect</a></li>
+      <li><a href="#how-we-use-it">2. How we use it</a></li>
+      <li><a href="#sharing">3. Who we share it with</a></li>
+      <li><a href="#cv-storage">4. Your CV and profile files</a></li>
+      <li><a href="#retention">5. How long we keep it</a></li>
+      <li><a href="#your-choices">6. Your choices</a></li>
+      <li><a href="#security">7. Security</a></li>
+      <li><a href="#children">8. Children's privacy</a></li>
+      <li><a href="#changes">9. Changes to this policy</a></li>
+      <li><a href="#contact">10. Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="info-we-collect">
+    <h2><span class="num">1</span>Information we collect</h2>
+    <p>We collect information you give us directly, and a small amount generated by using the app:</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Category</th><th>What it includes</th></tr>
+        <tr><td>Account</td><td>Name, email address, and a securely hashed password &mdash; or, if you use Sign in with Google, your Google account's name and verified email instead.</td></tr>
+        <tr><td>Profile</td><td>Phone number and a short bio, if you choose to add them.</td></tr>
+        <tr><td>CV / resume</td><td>A file you upload (PDF, Word, or text), and the skills we extract from its text and your bio to power matching &mdash; see Section 4.</td></tr>
+        <tr><td>Task activity</td><td>Tasks you post (description, price, location, and time windows), your availability windows if you offer help, and the resulting matches, acceptances, approvals, and declines.</td></tr>
+        <tr><td>Communications</td><td>In-app notifications about your own matches, approvals, and requests.</td></tr>
+        <tr><td>Device &amp; log data</td><td>Standard technical data &mdash; IP address, request timestamps, and app version &mdash; kept for security and reliability, not for tracking you across other apps or sites.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="how-we-use-it">
+    <h2><span class="num">2</span>How we use it</h2>
+    <ul>
+      <li>To create and secure your account, and keep you signed in.</li>
+      <li>To match tasks with people whose skills and availability fit &mdash; this runs automatically off your posted skills, bio, and CV text.</li>
+      <li>To show the other party's name and relevant task details once you're matched, so you can actually complete the task together.</li>
+      <li>To send you notifications about your own activity &mdash; a new match, an approval, a decline.</li>
+      <li>To keep the service running reliably and catch abuse or bugs.</li>
+    </ul>
+    <p>We do not use third-party advertising networks or analytics trackers, and we do not sell your personal information to anyone.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">3</span>Who we share it with</h2>
+    <p>We share the minimum needed to make the marketplace work, and nothing beyond that:</p>
+    <ul>
+      <li><strong>Other users, narrowly.</strong> When you're matched on a task, the other party sees your name and the task details relevant to that match &mdash; not your email, phone, or CV.</li>
+      <li><strong>Infrastructure providers.</strong> We host our servers, database, and file storage on Amazon Web Services (AWS), and use Google for Sign in with Google if you choose that option. These providers process data on our behalf under their own security commitments &mdash; they don't use it for their own purposes.</li>
+      <li><strong>Legal reasons.</strong> If we're required to by law, or to protect the rights, safety, or property of Spareo or our users.</li>
+    </ul>
+    <p>That's the complete list &mdash; there's no fourth category of "everyone else."</p>
+  </section>
+
+  <section id="cv-storage">
+    <h2><span class="num">4</span>Your CV and profile files</h2>
+    <p>
+      Files you upload are stored in a private, encrypted Amazon S3 bucket that isn't
+      publicly accessible &mdash; no one can browse or guess their way to your file. We
+      extract plain text from PDFs and Word documents solely to identify skills for
+      matching; if extraction fails or the file type isn't supported, the file is still
+      saved, just without that text.
+    </p>
+    <p>
+      Uploading a new CV replaces and deletes the old one. Removing your CV deletes the
+      file and the extracted text immediately. Viewing or downloading someone <em>else's</em>
+      CV isn't a feature of Spareo today &mdash; only you can attach, replace, or remove your own.
+    </p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">5</span>How long we keep it</h2>
+    <p>
+      We keep your account information for as long as your account is active. If you ask
+      us to delete your account (Section 6), we delete your personal information within
+      30 days, except where we're required to retain records &mdash; for example, completed
+      transaction history needed for dispute resolution or legal compliance.
+    </p>
+  </section>
+
+  <section id="your-choices">
+    <h2><span class="num">6</span>Your choices</h2>
+    <ul>
+      <li><strong>Edit or remove</strong> your bio, phone number, and CV at any time from your profile.</li>
+      <li><strong>Access or delete your account</strong> by emailing us at the address below &mdash; we'll act on it within 30 days.</li>
+      <li><strong>Sign out</strong> at any time, which clears your session from that device.</li>
+    </ul>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">7</span>Security</h2>
+    <p>
+      Passwords are hashed, never stored in plain text. Sessions use short-lived access
+      tokens with separately rotated refresh tokens. Data in transit is encrypted (HTTPS),
+      and your uploaded files are encrypted at rest. No system is perfectly secure, but
+      we design against realistic threats, not just checkbox compliance.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">8</span>Children's privacy</h2>
+    <p>
+      Spareo is not directed at children, and we don't knowingly collect information from
+      anyone under 16. If you believe a child has provided us information, contact us and
+      we'll remove it.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">9</span>Changes to this policy</h2>
+    <p>
+      If we make a material change to how we handle your information, we'll update the
+      date at the top of this page and, where required, notify you in the app.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">10</span>Contact us</h2>
+    <div class="card">
+      <p style="margin:0;">
+        Questions, access requests, or deletion requests &mdash; reach us at
+        <a href="mailto:bar@spareo.io">bar@spareo.io</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Spareo. This policy describes the Spareo mobile app and its API.
+  </footer>
+</div>
+</body>
+</html>
